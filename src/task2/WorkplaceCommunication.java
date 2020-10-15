@@ -6,6 +6,7 @@ public class WorkplaceCommunication implements Communication{
 
 	boolean isWhere = false;
 
+	//greetメソッド
 	public String greet(String str1) {
 		if (str1.equals("hello")) {
 			return "hello";
@@ -14,6 +15,7 @@ public class WorkplaceCommunication implements Communication{
 		}
 		}
 
+	//職場かどうか判断するメソッド
 	public Boolean isWhere(String work) {
 		if(work.equals("職場")) {
 			this.isWhere =true;
@@ -56,6 +58,7 @@ public class WorkplaceCommunication implements Communication{
 		System.out.println("---------------");
 		System.out.println("誰から話しかけられましたか？");
 
+		//例外処理
 		try {
 			String person = sc.next();
 			if (person.equals("会長")) {
